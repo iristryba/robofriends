@@ -6,16 +6,17 @@ const CardList = ({ robots }) => {
     // if (true) {
     //     throw new Error ('Noooooo');
     // }
+    console.log(robots);
 
     return (
         <div>
             {robots.map((robot) => {
                 return (
                     <Card
-                    key={robot.id}
-                    id={robot.id}
-                    name={robot.name}
-                    email={robot.email}
+                        key={robot.id}
+                        id={robot.id}
+                        name={robot.name}
+                        email={robot.email}
                     />);
                 }
             )}
